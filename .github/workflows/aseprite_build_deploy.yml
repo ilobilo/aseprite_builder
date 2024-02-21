@@ -116,7 +116,7 @@ jobs:
         run: rm -f gen modp_b64_gen gen.exe gen.exe.manifest modp_b64_gen.exe modp_b64_gen.exe.manifest
 
       - name: Create AppImage
-        run: ./linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage
+        run: ./linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage -d AppDir/aseprite.desktop -i AppDir/aseprite.png
 
       - name: Create release
         working-directory: aseprite/build/bin
